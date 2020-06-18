@@ -11,6 +11,7 @@ public class BillingCalloutService {
         }
     }
     
+    
     @Future(callout=true)
     private static void billProject(String projectRef, Decimal billAmount, String username, String password) {
 
@@ -36,6 +37,5 @@ public class BillingCalloutService {
                 update projects;
             }
         }
-
     }
 }
